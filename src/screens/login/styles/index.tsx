@@ -1,1 +1,1 @@
-export {styles} from './LoginScreenStyles';
+export {default as LoginScreenStyles} from './LoginScreenStyles';

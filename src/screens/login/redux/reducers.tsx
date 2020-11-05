@@ -11,19 +11,19 @@ const INITIAL_STATE = {
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case LOGIN:
-      return produce(state, nextState =>
+      return produce(state, (nextState) =>
         assign(nextState, {
           response: action.response,
         }),
       );
     case FETCHING_TOKEN:
-      return produce(state, nextState =>
+      return produce(state, (nextState) =>
         assign(nextState, {
           isFetchingToken: action.isFetchingToken,
         }),
       );
     case LOGIN_FAILURE:
-      return produce(state, nextState =>
+      return produce(state, (nextState) =>
         assign(nextState, {
           loginError: action.loginError,
         }),

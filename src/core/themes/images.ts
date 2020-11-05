@@ -1,1 +1,21 @@
 // export const logo = require('../../../assets/logo.png');
+export const background = require('../../../assets/background.png');
+export const search = require('../../../assets/search.png');
+export const check = require('../../../assets/check.png');
+export const eye = require('../../../assets/eye.png');
+export const header = require('../../../assets/header.png');
+export const group = require('../../../assets/Group.png');
+export const lupa = require('../../../assets/lupa.png');
+export const house = require('../../../assets/house.png');
+export const block = require('../../../assets/block.png');
+export const keys = require('../../../assets/keys.png');
+export const bearing = require('../../../assets/bearing.png');
+export const bucatarielol = require('../../../assets/bucatarielol.png');
+export const location = require('../../../assets/location.png');
+export const profil = require('../../../assets/profil.png');
+export const star1 = require('../../../assets/star1.png');
+export const star2 = require('../../../assets/star2.png');
+export const bath = require('../../../assets/bath.png');
+export const lul = require('../../../assets/lul.png');
+export const heart = require('../../../assets/heart.png');
+                        

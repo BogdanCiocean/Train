@@ -1,46 +1,46 @@
-import { COLORS } from './colors';
+import {COLORS} from './colors';
 
 export const LightTheme = {
-    dark: false,
-    
-    fontSize: {
-        small: 12,
-        regular: 16,
-        large: 20
-    },
+  dark: false,
 
-    colors: {
-        accent: COLORS.GAINSBORO_WHITE,
-        accentSecondary: COLORS.LIGHT_AQUA,
+  fontSize: {
+    small: 12,
+    regular: 16,
+    large: 20,
+  },
 
-        text: COLORS.GAINSBORO_WHITE,
-        textSecondary: COLORS.DARK_GRAY,
-        textTertiary: COLORS.DIM_GRAY,
+  colors: {
+    accent: COLORS.GAINSBORO_WHITE,
+    accentSecondary: COLORS.LIGHT_AQUA,
 
-        positive: COLORS.HOT_GREEN,
-        positiveSecondary: COLORS.LIME_GREEN,
+    text: COLORS.GAINSBORO_WHITE,
+    textSecondary: COLORS.DARK_GRAY,
+    textTertiary: COLORS.DIM_GRAY,
 
-        negative: COLORS.HOT_RED,
-        error: COLORS.LIGHT_RED,
-        warning: COLORS.YELLOW,
+    positive: COLORS.HOT_GREEN,
+    positiveSecondary: COLORS.LIME_GREEN,
 
-        cardBackground: COLORS.SHARK_GRAY,
-        appBackground: COLORS.COD_GRAY,
-        bottomSheetBackground: COLORS.VERY_DARK_GRAY,
-        overlayBackground: COLORS.BLACK + '90',
+    negative: COLORS.HOT_RED,
+    error: COLORS.LIGHT_RED,
+    warning: COLORS.YELLOW,
 
-        settingsDivider: COLORS.BLACK,
-        inputBackground: COLORS.GUN_POWDER_GRAY,
-        disabledButton: COLORS.DARK_GRAY,
+    cardBackground: COLORS.SHARK_GRAY,
+    appBackground: COLORS.COD_GRAY,
+    bottomSheetBackground: COLORS.VERY_DARK_GRAY,
+    overlayBackground: COLORS.BLACK + '90',
 
-        gradientLight: COLORS.COD_GRAY,
-        gradientDark: COLORS.BLACK,
+    settingsDivider: COLORS.BLACK,
+    inputBackground: COLORS.GUN_POWDER_GRAY,
+    disabledButton: COLORS.DARK_GRAY,
 
-        labelUndelegate: COLORS.LIGHT_RED,
-        labelRedelegate: COLORS.HOT_RED,
-        labelReward: COLORS.GREEN,
+    gradientLight: COLORS.COD_GRAY,
+    gradientDark: COLORS.BLACK,
 
-        white: COLORS.WHITE,
-        black: COLORS.BLACK
-    }
+    labelUndelegate: COLORS.LIGHT_RED,
+    labelRedelegate: COLORS.HOT_RED,
+    labelReward: COLORS.GREEN,
+
+    white: COLORS.WHITE,
+    black: COLORS.BLACK,
+  },
 };
