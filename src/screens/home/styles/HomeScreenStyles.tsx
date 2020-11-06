@@ -1,30 +1,63 @@
 import {StyleSheet} from 'react-native';
-import {metrics} from '../../../core/themes';
 import {colors} from '../../../core/themes/';
 
 export default StyleSheet.create({
   scrollview: {
-    backgroundColor: '#F8FBFF',
+    backgroundColor: colors.whitegrey,
   },
 
   view: {
-    backgroundColor: '#F8FBFF',
-    flex: 1,
+    
   },
 
-  headercontainer: {
-    width: '100%',
-    height: '30%',
+
+  headerelements:{
+    marginTop: 15,
+    width:'100%',
+    height:70,
+    justifyContent:'space-between',
+    flexDirection: 'row',
+    alignItems: 'center'
+
+  },
+  profilepic:{
+    borderRadius:50,
+    marginLeft:28,
   },
 
-  headerImg: {
-    width: '100%',
-    height: '30%',
-    marginTop: 20,
+  angeles:{
+    flexDirection:'row',
+    justifyContent:'center',
+    alignItems:'center',
+    marginLeft:5
+  },
+
+  locicon:{
+   marginRight:10,
+   height: 14.5,
+   width: 11
+  },
+
+  CA: {
+    fontSize: 12,
+    color: colors.darkerblue
+  },
+
+  arrow:{
+   marginLeft: 7,
+  },
+
+  settings:{
+   flexDirection:'row',
+   marginRight: 28,
+  },
+
+  bell:{
+   marginRight: 28,
   },
 
   searchcontainer: {
-    marginTop: 30,
+    marginTop: 20,
     marginLeft: 28,
     marginRight: 28,
   },
@@ -36,10 +69,10 @@ export default StyleSheet.create({
 
   text2: {
     fontSize: 20,
-    color: '#143656',
+    color: colors.darkerblue,
   },
   searchbarview: {
-    backgroundColor: 'white',
+    backgroundColor: colors.white,
     borderRadius: 10,
     marginTop: 20,
     alignItems: 'center',
@@ -82,11 +115,11 @@ export default StyleSheet.create({
   card1text: {
     fontWeight: 'bold',
     marginTop: 15,
-    color: '#ffffff',
+    color: colors.white,
   },
 
   card2: {
-    backgroundColor: 'white',
+    backgroundColor: colors.white,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 10,
@@ -96,7 +129,7 @@ export default StyleSheet.create({
   },
 
   card3: {
-    backgroundColor: 'white',
+    backgroundColor: colors.white,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 10,
@@ -106,7 +139,7 @@ export default StyleSheet.create({
   },
 
   card4: {
-    backgroundColor: 'white',
+    backgroundColor: colors.white,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 10,
@@ -119,7 +152,8 @@ export default StyleSheet.create({
     marginHorizontal: 29.5,
     marginTop: 20,
     width: '86%',
-    height: '100%',
+    height: 260,
+    marginBottom:30,
   },
 
   image: {
@@ -133,7 +167,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     marginTop: 20,
     marginLeft: 25,
-    backgroundColor: '#F8FBFF',
+    backgroundColor: colors.whitegrey,
     borderRadius: 50,
     alignItems: 'center',
     maxWidth: '44%',
@@ -154,18 +188,16 @@ export default StyleSheet.create({
 
   interior2: {
     marginTop: 98,
-    backgroundColor: '#ffffff',
+    backgroundColor: colors.white,
     borderTopLeftRadius: 15,
     borderTopRightRadius: 15,
     borderBottomLeftRadius: 15,
     height: 100,
     
-    
-    
   },
   texttitle: {
     fontSize: 20,
-    color: '#143656',
+    color: colors.darkerblue,
     fontStyle: 'normal',
     paddingLeft: 20,
     paddingVertical: 5,
@@ -174,7 +206,7 @@ export default StyleSheet.create({
   },
   profil: {
     flexDirection: 'row',
-    backgroundColor: '#ffffff',
+    backgroundColor: colors.white,
     alignItems: 'center',
   },
   profilephoto: {
@@ -195,14 +227,14 @@ export default StyleSheet.create({
 
   price: {
     fontWeight: 'bold',
-    color: '#143656',
+    color: colors.darkerblue,
     fontSize: 20,
     marginLeft: 55,
     justifyContent: 'center',
   },
 
   review: {
-    backgroundColor: '#ffffff',
+    backgroundColor: colors.white,
     flexDirection: 'row',
   },
 
@@ -236,7 +268,7 @@ export default StyleSheet.create({
   },
 
   numbers: {
-    color: 'rgb(138,155,171)',
+    color: colors.fadedgrey,
     marginLeft: 5,
   },
 
@@ -245,7 +277,7 @@ export default StyleSheet.create({
   },
 
   heartview: {
-    backgroundColor: '#ffffff',
+    backgroundColor: colors.white,
     borderRadius: 100,
     justifyContent: 'center',
     width: '10%',

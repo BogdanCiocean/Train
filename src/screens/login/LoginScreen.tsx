@@ -1,37 +1,31 @@
-import React,{useState} from 'react';
+import React, {useState} from 'react';
 import {
   View,
   Image,
   ImageBackground,
   TouchableOpacity,
   Text,
-  ScrollView
+  ScrollView,
 } from 'react-native';
 import {Input} from 'react-native-elements';
 import {connect} from 'react-redux';
 import {LOGIN_SAGA} from './redux';
 import {strings} from '../../core/constants';
 import {LoginScreenStyles as styles} from './styles';
+import {background, search, check, eye} from '../../core/themes/images';
 
-const validateEmail=(email)=>{
-
+const validateEmail = email => {
   return email.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g);
-
-}
+};
 
 const LoginScreen = ({navigation}) => {
-  const [showPass,setShowPass] = useState(false);
-  const [valid,setValid] = useState(false);
+  const [showPass, setShowPass] = useState(false);
+  const [valid, setValid] = useState(false);
 
   return (
     <ScrollView style={styles.view}>
-      <ImageBackground
-        source={require('../../../assets/background.png')}
-        style={styles.background}>
-        <Image
-          style={styles.logo}
-          source={require('../../../assets/search.png')}
-        />
+      <ImageBackground source={background} style={styles.background}>
+        <Image style={styles.logo} source={search} />
 
         <View>
           <View style={styles.titleContainer}>
@@ -45,18 +39,13 @@ const LoginScreen = ({navigation}) => {
               autoCapitalize="none"
               placeholder="user@email.com"
               rightIcon={
-                valid
-                ?<Image
-                style={styles.inputIcons}
-                source={require('../../../assets/check.png')}
-              />
-                :null
+                valid ? (
+                  <Image style={styles.inputIcons} source={check} />
+                ) : null
               }
-                onChangeText={(text)=>
-                  validateEmail(text)?setValid(true):setValid(false)
+              onChangeText={text =>
+                validateEmail(text) ? setValid(true) : setValid(false)
               }
-                
-              
             />
             <Text style={styles.passwordText}>{strings.password}</Text>
             <Input
@@ -64,21 +53,20 @@ const LoginScreen = ({navigation}) => {
               placeholder="password"
               secureTextEntry={showPass}
               autoCapitalize="none"
-              rightIcon={<TouchableOpacity
-                    onPress={()=>{
-                        showPass ? setShowPass(false) : setShowPass(true);
-                    }}
-                >
-                <Image
-                  style={styles.inputIcons}
-                  source={require('../../../assets/eye.png')}
-                />
+              rightIcon={
+                <TouchableOpacity
+                  onPress={() => {
+                    showPass ? setShowPass(false) : setShowPass(true);
+                  }}>
+                  <Image style={styles.inputIcons} source={eye} />
                 </TouchableOpacity>
               }
             />
           </View>
           <View>
-            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('HomeScreen')} >
+            <TouchableOpacity
+              style={styles.button}
+              onPress={() => navigation.navigate('HomeScreen')}>
               <Text style={styles.buttonText}>{strings.LOGIN}</Text>
             </TouchableOpacity>
             <View style={styles.registerContainer}>
@@ -96,13 +84,16 @@ const LoginScreen = ({navigation}) => {
   );
 };
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   const {message, isFetchingToken} = state.login.loginReducer;
   return {message, isFetchingToken};
 };
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = dispatch => ({
   login: () => dispatch({type: LOGIN_SAGA}),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(LoginScreen);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(LoginScreen);

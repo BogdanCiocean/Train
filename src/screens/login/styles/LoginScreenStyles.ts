@@ -1,10 +1,10 @@
 import {StyleSheet} from 'react-native';
+import {colors} from '../../../core/themes/';
 export default StyleSheet.create({
   view: {
-    marginLeft: -2,
-
     width: '101%',
-    backgroundColor: '#F8FBFF',
+    backgroundColor: colors.whitegrey,
+    marginLeft:-2,
   },
   background: {
     flex: 1,
@@ -26,13 +26,13 @@ export default StyleSheet.create({
   emailText: {
     margin: 5,
     paddingLeft: 19,
-    color: '#13497B',
+    color: colors.darkblue,
   },
   passwordText: {
     margin: 5,
     paddingLeft: 19,
     marginTop: -10,
-    color: '#13497B',
+    color: colors.darkblue,
   },
   inputEmail: {
     borderRadius: 10,
@@ -41,7 +41,7 @@ export default StyleSheet.create({
     padding: 3,
     elevation: 2,
     paddingLeft: 30,
-    backgroundColor: 'white',
+    backgroundColor: colors.white,
     borderBottomWidth: 0,
   },
   inputPassword: {
@@ -51,21 +51,22 @@ export default StyleSheet.create({
     padding: 3,
     elevation: 2,
     paddingLeft: 30,
-    backgroundColor: 'white',
+    backgroundColor: colors.white,
     borderBottomWidth: 0,
   },
   registerContainer: {
-    paddingHorizontal: '3%',
     height: 50,
     justifyContent: 'space-between',
     flexDirection: 'row',
     alignItems: 'flex-end',
+    marginLeft: 13,
+    marginRight: 13,
   },
   registerText: {
     fontSize: 14,
     padding: 10,
     fontWeight: 'bold',
-    color: '#13497B',
+    color: colors.darkblue,
   },
   forgotText: {
     fontSize: 14,
@@ -75,19 +76,19 @@ export default StyleSheet.create({
     alignSelf: 'center',
   },
   title: {
-    color: '#13497B',
+    color: colors.darkblue,
     fontWeight: 'bold',
     fontSize: 40,
     alignSelf: 'center',
   },
   subtitle: {
-    color: 'rgba(0, 0, 0, 0.3)',
+    color: colors.subgrey,
     fontWeight: '300',
     fontSize: 20,
     alignSelf: 'center',
   },
   button: {
-    backgroundColor: '#13497B',
+    backgroundColor: colors.darkblue,
     borderRadius: 10,
     minWidth: '90%',
     alignSelf: 'center',
@@ -96,7 +97,6 @@ export default StyleSheet.create({
   },
   buttonText: {
     color: 'white',
-
     alignSelf: 'center',
     fontWeight: 'bold',
     fontSize: 14,

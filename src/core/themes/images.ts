@@ -17,5 +17,10 @@ export const star1 = require('../../../assets/star1.png');
 export const star2 = require('../../../assets/star2.png');
 export const bath = require('../../../assets/bath.png');
 export const lul = require('../../../assets/lul.png');
+export const path = require('../../../assets/path.png');
 export const heart = require('../../../assets/heart.png');
+export const bell = require('../../../assets/bell.png');
+export const bearings = require('../../../assets/bearings.png');
+export const arrow = require('../../../assets/arrow.png');
+export const profilepic = require('../../../assets/profilepic.png')
                         
